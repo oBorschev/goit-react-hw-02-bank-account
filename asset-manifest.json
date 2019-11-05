@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/oBorschev/goit-react-hw-02-bank-account/static/js/main.9cd4ad32.chunk.js",
-    "main.js.map": "/oBorschev/goit-react-hw-02-bank-account/static/js/main.9cd4ad32.chunk.js.map",
-    "runtime-main.js": "/oBorschev/goit-react-hw-02-bank-account/static/js/runtime-main.f711ebad.js",
-    "runtime-main.js.map": "/oBorschev/goit-react-hw-02-bank-account/static/js/runtime-main.f711ebad.js.map",
-    "static/js/2.8f8f81c1.chunk.js": "/oBorschev/goit-react-hw-02-bank-account/static/js/2.8f8f81c1.chunk.js",
-    "static/js/2.8f8f81c1.chunk.js.map": "/oBorschev/goit-react-hw-02-bank-account/static/js/2.8f8f81c1.chunk.js.map",
-    "index.html": "/oBorschev/goit-react-hw-02-bank-account/index.html",
-    "precache-manifest.7d0810a41017c874def7cd24c73cae82.js": "/oBorschev/goit-react-hw-02-bank-account/precache-manifest.7d0810a41017c874def7cd24c73cae82.js",
-    "service-worker.js": "/oBorschev/goit-react-hw-02-bank-account/service-worker.js"
+    "main.js": "/goit-react-hw-02-bank-account/static/js/main.9cd4ad32.chunk.js",
+    "main.js.map": "/goit-react-hw-02-bank-account/static/js/main.9cd4ad32.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-02-bank-account/static/js/runtime-main.b10a97a6.js",
+    "runtime-main.js.map": "/goit-react-hw-02-bank-account/static/js/runtime-main.b10a97a6.js.map",
+    "static/js/2.8f8f81c1.chunk.js": "/goit-react-hw-02-bank-account/static/js/2.8f8f81c1.chunk.js",
+    "static/js/2.8f8f81c1.chunk.js.map": "/goit-react-hw-02-bank-account/static/js/2.8f8f81c1.chunk.js.map",
+    "index.html": "/goit-react-hw-02-bank-account/index.html",
+    "precache-manifest.4be13b3a87a38d85f18c4001f19d8666.js": "/goit-react-hw-02-bank-account/precache-manifest.4be13b3a87a38d85f18c4001f19d8666.js",
+    "service-worker.js": "/goit-react-hw-02-bank-account/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.f711ebad.js",
+    "static/js/runtime-main.b10a97a6.js",
     "static/js/2.8f8f81c1.chunk.js",
     "static/js/main.9cd4ad32.chunk.js"
   ]
