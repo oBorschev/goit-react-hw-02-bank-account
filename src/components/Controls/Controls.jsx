@@ -1,15 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Controls = ({ amount, onChange, deposit, withdraw }) => (
-  <section className="controls">
-    <input type="number" name="amount" id={amount} onChange={onChange} />
-    <button type="button" onClick={deposit}>
-      Deposit
-    </button>
-    <button type="button" onClick={withdraw}>
-      Withdraw
-    </button>
-  </section>
-);
+class Controls extends Component {
+  state = {
+    amount: 0,
+  };
+
+  handleInputAmount = e => {
+    this.setState({
+      amount: Number(e.currentTarget.value),
+    });
+  };
+
+  setDeposit = () => {
+    this.props.deposit(this.state.amount);
+  };
+  setWithdraw = () => {
+    this.props.withdraw(this.state.amount);
+  };
+
+  render() {
+    return (
+      <section className="controls">
+        <input
+          type="number"
+          name="amount"
+          id={this.props.amountId}
+          onChange={this.handleInputAmount}
+        />
+        <button type="button" onClick={this.setDeposit}>
+          Deposit
+        </button>
+        <button type="button" onClick={this.setWithdraw}>
+          Withdraw
+        </button>
+      </section>
+    );
+  }
+}
 
 export default Controls;
