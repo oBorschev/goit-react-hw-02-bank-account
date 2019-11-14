@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Controls.module.css';
 
 class Controls extends Component {
   state = {
@@ -20,7 +21,7 @@ class Controls extends Component {
 
   render() {
     return (
-      <section className="controls">
+      <section className={styles.controls}>
         <input
           type="number"
           name="amount"
