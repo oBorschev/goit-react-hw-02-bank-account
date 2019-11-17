@@ -18,7 +18,6 @@ class Controls extends Component {
     this.props.deposit(this.state.amount);
   };
   setWithdraw = () => {
-    console.log(this.props.deposit);
     this.props.withdraw(this.state.amount);
   };
 
