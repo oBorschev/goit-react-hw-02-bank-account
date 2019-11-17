@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ba6c1cedf940cf5291a1d4abcad1fbd",
+    "revision": "fc9c54b6f193398ac028c75df03ede16",
     "url": "/goit-react-hw-02-bank-account/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goit-react-hw-02-bank-account/static/css/2.5dbdccff.chunk.css"
   },
   {
-    "revision": "6f81d4443d164152adfd",
+    "revision": "99ab73f640cb396f0ce0",
     "url": "/goit-react-hw-02-bank-account/static/css/main.808ea484.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goit-react-hw-02-bank-account/static/js/2.20cfa3b7.chunk.js"
   },
   {
-    "revision": "6f81d4443d164152adfd",
-    "url": "/goit-react-hw-02-bank-account/static/js/main.51804b22.chunk.js"
+    "revision": "99ab73f640cb396f0ce0",
+    "url": "/goit-react-hw-02-bank-account/static/js/main.3aced28b.chunk.js"
   },
   {
     "revision": "4456fcf01a6249bbb0da",
