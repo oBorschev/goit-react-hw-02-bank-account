@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import styles from './Controls.module.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Controls extends Component {
   state = {
     amount: 0,
   };
 
-  handleInputAmount = e => {
+  handleInputAmount = ({ currentTarget: { value } }) => {
     this.setState({
-      amount: Number(e.currentTarget.value),
+      amount: Number(value),
     });
   };
 
@@ -16,6 +18,7 @@ class Controls extends Component {
     this.props.deposit(this.state.amount);
   };
   setWithdraw = () => {
+    console.log(this.props.deposit);
     this.props.withdraw(this.state.amount);
   };
 
