@@ -17,6 +17,10 @@ class Dashboard extends Component {
     amountInput: shortid.generate(),
   };
 
+  handleSetTransaction = e => {
+    console.log(e);
+  };
+
   handleDeposit = amount => {
     if (amount <= 0) {
       toast.error('Введите корректную сумму для проведения операции!');

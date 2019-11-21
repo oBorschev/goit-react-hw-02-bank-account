@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import styles from './Controls.module.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 class Controls extends Component {
   state = {
-    amount: 0,
+    amount: '',
   };
 
   handleInputAmount = ({ currentTarget: { value } }) => {
@@ -14,14 +12,18 @@ class Controls extends Component {
     });
   };
 
-  setDeposit = () => {
-    this.props.deposit(this.state.amount);
-  };
-  setWithdraw = () => {
-    this.props.withdraw(this.state.amount);
+  handleOnClick = e => {
+    e.target.name === 'deposit'
+      ? this.props.deposit(Number(this.state.amount))
+      : this.props.withdraw(Number(this.state.amount));
+
+    this.setState({
+      amount: '',
+    });
   };
 
   render() {
+    const onClick = this.handleOnClick;
     return (
       <section className={styles.controls}>
         <input
@@ -29,11 +31,12 @@ class Controls extends Component {
           name="amount"
           id={this.props.amountId}
           onChange={this.handleInputAmount}
+          value={this.state.amount}
         />
-        <button type="button" onClick={this.setDeposit}>
+        <button type="button" name="deposit" onClick={onClick}>
           Deposit
         </button>
-        <button type="button" onClick={this.setWithdraw}>
+        <button type="button" name="withdraw" onClick={onClick}>
           Withdraw
         </button>
       </section>
